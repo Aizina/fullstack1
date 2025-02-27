@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose from 'mongoose'
 
 const personSchema = new mongoose.Schema({
   name: {
@@ -26,4 +26,4 @@ personSchema.set('toJSON', {
   }
 });
 
-export default mongoose.model('Person', personSchema);
+export default mongoose.model('Person', personSchema)

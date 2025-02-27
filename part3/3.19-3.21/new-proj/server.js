@@ -1,13 +1,13 @@
 // server.js
-import 'dotenv/config';
-import express from 'express';
-import cors from 'cors';
-import morgan from 'morgan';
-import mongoose from 'mongoose';
-import Person from './models/person.js';
+require('dotenv').config()
+const express = require('express')
+import cors from 'cors'
+import morgan from 'morgan'
+import mongoose from 'mongoose'
+import Person from './models/person.js'
 
-const PORT = process.env.PORT || 3001;
-const MONGODB_URI = process.env.MONGODB_URI;
+const PORT = process.env.PORT || 3001
+const MONGODB_URI = process.env.MONGODB_URI
 
 const app = express();
 
