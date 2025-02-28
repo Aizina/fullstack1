@@ -1,6 +1,7 @@
 // server.js
-require('dotenv').config()
-const express = require('express')
+import dotenv from "dotenv"
+dotenv.config()
+import express from 'express'
 import cors from 'cors'
 import morgan from 'morgan'
 import mongoose from 'mongoose'
