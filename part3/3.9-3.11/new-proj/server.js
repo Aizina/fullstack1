@@ -1,5 +1,6 @@
 // server.js
 import express from 'express';
+import process from 'process';
 import cors from 'cors';
 import morgan from 'morgan';
 import { promises as fs } from 'fs';
@@ -149,7 +150,7 @@ app.put('/api/persons/:id', async (req, res, next) => {
   }
 });
 
-app.use((err, req, res, next) => {
+app.use((err, req, res) => {
   console.error(err.stack);
   res.status(500).json({ error: 'Something went wrong!' });
 });
