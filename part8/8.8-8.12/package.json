@@ -1,0 +1,17 @@
+{
+  "name": "8.8-8.12",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run dev --prefix library-frontend\" \"npm start --prefix library-backend\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@apollo/client": "^4.0.4",
+    "concurrently": "^9.2.1",
+    "graphql": "^16.11.0"
+  }
+}
