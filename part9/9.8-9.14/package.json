@@ -1,0 +1,17 @@
+{
+  "name": "9.8-9.9",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix patientor-backend\" \"npm run dev --prefix patientor\"",
+    "dev:backend": "npm run dev --prefix patientor-backend",
+    "dev:frontend": "npm run dev --prefix patientor"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

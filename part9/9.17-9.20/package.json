@@ -1,0 +1,17 @@
+{
+  "name": "9.17-9.20",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix flight-diary\" \"npm run dev --prefix flight-diary-frontend\"",
+    "dev:backend": "npm run dev --prefix flight-diary",
+    "dev:frontend": "npm run dev --prefix flight-diary-frontend",
+    "install:all": "npm install --prefix flight-diary && npm install --prefix flight-diary-frontend"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
